@@ -33,4 +33,12 @@ public class CustomListTest {
         // Edmonton should still exist
         assertTrue(list.hasCity(edmonton));
     }
+    public void testCountCities() {
+        CustomList list = new CustomList();
+        City calgary = new City("Calgary", "AB");
+        City edmonton = new City("Edmonton", "AB");
+        City toronto = new City("Toronto", "ON");
+
+        // Initially empty list
+        assertEquals(0, list.countCities());
 }
